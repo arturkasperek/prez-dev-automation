@@ -8,10 +8,15 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+		<style>
+			body {
+				background-color: #1A237E;
+			}
+		</style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +30,120 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Automatyzacja stosowana dla programistów</h2>
+					<br />
+					<br />
+					<br />
+					<br />
+					<span>Artur Kasperek</span>
+				</section>
+				<section>
+					<h2>
+						O mnie
+					</h2>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">programista webowy JS</li>
+						<li class="fragment fade-in-then-semi-out">członek teamu tworzącego 'Dzieje Khorinis'</li>
+						<li class="fragment fade-in-then-semi-out">współtwórca kompilatora Daedalus do gry Gothic</li>
+						<li class="fragment fade-in-then-semi-out">pasjonat automatyzacji</li>
+						<li class="fragment fade-in-then-semi-out">🏊 + 🚴 + ⛸️ = ♥️</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Kiedyś to było ...</h3>
+					<img width="350px" src="1970.jpg">
+					<ul>
+						<li class="fragment fade-in-then-semi-out">wymagania userów mało zmienne</li>
+						<li class="fragment fade-in-then-semi-out">względnie niewielka moc komputerów</li>
+						<li class="fragment fade-in-then-semi-out">komputery używane głównie w korpo</li>
+						<li class="fragment fade-in-then-semi-out">internet dopiero powstaje, co implikuje, że ...</li>
+						<li class="fragment fade-in-then-semi-out">... outsourcing IT małopopularny</li>
+						<li class="fragment fade-in-then-semi-out">... praca zdalna trudna w realizacji</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Dziś</h3>
+					<img src="krowa.jpg" width="400px">
+					<div>
+						<ul style="font-size: 25px">
+							<li class="fragment fade-in-then-semi-out">mamy szybki internet</li>
+							<li class="fragment fade-in-then-semi-out">mamy mocne komputery 🚀</li>
+							<li class="fragment fade-in-then-semi-out">komputer jest dostępny dla każdego</li>
+							<li class="fragment fade-in-then-semi-out">spędzamy przed nim często więcej niż połowę dnia, co powoduje, że ...</li>
+							<li class="fragment fade-in-then-semi-out">... zapotrzebowanie na software jest ogromne</li>
+							<li class="fragment fade-in-then-semi-out">... zapotrzebowanie na programistów jest ogromne</li>
+							<li class="fragment fade-in-then-semi-out">... ludzie oczekają ciągłych zmian w softwarze</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h3>Co daje automatyzacja procesów IT ?</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">specjalista nie traci czasu na rutynowych zadaniach</li>
+						<li class="fragment fade-in-then-semi-out">mniejsze prawdopodbieństwo popełnienia błędu</li>
+						<li class="fragment fade-in-then-semi-out">możliwość wprowadzenia nowoczosnego workflow dla developerów</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Przykłady rzeczy które można zautomatyzować</h3>
+					<ul>
+						<li class="fragment fade-in-then-semi-out">backup bazy danych</li>
+						<li class="fragment fade-in-then-semi-out">synchronizacja danych między środowiskiem produkcyjnym a testowym</li>
+						<li class="fragment fade-in-then-semi-out">budowanie aplikacji i wysyłanie na serwer produkcyjny</li>
+						<li class="fragment fade-in-then-semi-out">audyt wydajnościowy aplikacji</li>
+						<li class="fragment fade-in-then-semi-out">odpalanie testów przed mergowaniem kodu</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Co to jest Continues Integration (CI)?</h3>
+					<img src="continious-integration.png" style="width: 1000px">
+				</section>
+				<section>
+					<h3>Przykład CI</h3>
+					<img src="CI-example.png" width="800px">
+				</section>
+				<section>
+					<h3>Jenkins - popularny niegdyś serwer CI (gdzieniegdzie nadal 😀 ) </h3>
+					<img src="jenkins.png" width="1200px">
+				</section>
+				<section>
+					<h3>GitHub Actions, CircleCI - nowsze CI, trigerrowane tylko przez eventy na GitHubie</h3>
+					<img src="gh.png" style="width: 800px">
+				</section>
+				<section>
+					<h3>Co to jest Continues Delivery ?</h3>
+					<img src="continuous-delivery.png" style="width: 600px">
+				</section>
+				<section>
+					<h3>
+						CD w kilku słowach
+					</h3>
+					<span style="font-style: italic">"Ciągłe dostarczanie to praktyka programistyczna, gdzie oprogramowanie jest budowane w taki sposób, że może ono zostać opublikowane na środowisku produkcyjnym w dowolnej chwili."</span> - Martin Fowler
+				</section>
+				<section>
+					<h3>Jenkins, Github Action, CircleCI - służą też do CD</h3>
+				</section>
+				<section>
+					<h3>Jenkins - gdzie lepiej się nada ?</h3>
+					<img src="jenkins2.png">
+				</section>
+				<section>
+					<h3>Github Actions - przykładowa konfiguracja</h3>
+					<img src="gh-actions.png" style="width: 650px">
+				</section>
+				<section>
+					<h3>Docker - CI/CD best friend. Ale dlaczego ?</h3>
+					<img src="docker.png" style="width: 500px; border: none;background-color: transparent;box-shadow: none;">
+				</section>
+				<section>
+					<h3>Git Workflow - dlaczego jest taki ważny?</h3>
+					<img src="git2.png" style="width: 700px; border: none; background-color: white; box-shadow: none;">
+				</section>
+				<section>
+					<h3>Dlaczego wersjonujemy kod?</h3>
+					<img src="dk.png" width="700px">
+				</section>
 			</div>
 		</div>
 
